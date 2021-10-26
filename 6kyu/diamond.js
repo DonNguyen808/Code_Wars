@@ -16,5 +16,3 @@ console.log(diamond(5))
 
 
 
-
-

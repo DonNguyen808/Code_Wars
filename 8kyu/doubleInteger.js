@@ -5,3 +5,7 @@ function doubleInteger(i) {
 }
 
 console.log(doubleInteger(2))
+
+
+
+

@@ -20,3 +20,7 @@ function getAverage(marks) {
 
 console.log(getAverage([70, 80, 60]))
 
+
+
+
+

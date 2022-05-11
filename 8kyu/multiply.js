@@ -4,10 +4,19 @@
 //     a * b
 // }
 
-function multiply(a, b){
-    return a * b
-}
+// function multiply(a, b){
+//     return a * b
+// }
 
-console.log(multiply(2, 5))
+// console.log(multiply(2, 5))
 
-// It was missing a return keyword
+// Implement a function which multiplies two numbers.
+
+// function multiply(n1, n2) {
+//   return n1 * n2;
+// }
+
+const multiply = (n1, n2) => n1 * n2
+
+// Expected result: 6
+console.log(multiply(2, 3), 6)

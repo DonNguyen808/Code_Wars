@@ -17,4 +17,5 @@ console.log(solution('13', '200'), '1320013');
 console.log(solution('Soon', 'Me'), 'MeSoonMe');
 console.log(solution('U', 'False'), 'UFalseU');
 console.log(solution('1', '22'), '1221')
+console.log(solution('22', '1'), '1221')
 

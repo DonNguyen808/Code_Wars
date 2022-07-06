@@ -7,19 +7,19 @@
 // Input validation
 // If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
-function sumArray2(array) {
-    if (array == null) {
+function sumArray2(arr) {
+    if (arr == null) {
         return 0;
-    } else if (array.length < 2) {
+    } else if (arr.length < 2) {
         return 0;
-    } else {
-    sorted = array.sort((a, b) => a - b);
-    let total = 0;
-    for (let i = 1; i < array.length - 1; i++) {
-        total += array[i];
+    }else {
+        let sortNum = arr.sort((a, b) => a - b)
+        let total = 0;
+        for (let i = 1; i < sortNum.length - 1; i++) {
+            total += sortNum[i]
         }
-        return total;
-    }   
+        return total
+    }
 }
 
 console.log( sumArray2(null), 0 );
@@ -30,3 +30,25 @@ console.log( sumArray2([ 6, 2, 1, 8, 10 ]), 16 );
 console.log( sumArray2([ 0, 1, 6, 10, 10 ]), 17 );
 console.log( sumArray2([ -6, -20, -1, -10, -12 ]), -28 );
 console.log( sumArray2([ -6, 20, -1, 10, -12 ]), 3 );
+
+/* 
+PREP
+Parameter (input)
+taking a array of integers
+
+Return (output)
+return back the sum of the array except the highest and smallest integer
+if list is empty or only 1 in the list - return 0
+
+example
+console.log( sumArray2(null), 0 );
+console.log( sumArray2([ ]), 0 );
+console.log( sumArray2([ 3 ]), 0 );
+console.log( sumArray2([ -6, 20, -1, 10, -12 ]), 3 );
+
+Pseudo code
+Make conditional check to see if the list is empty or only has 1 element and return 0
+I would sort it so that I know the first index and last index are the lowest and highest
+then for loop - add up except first and last index
+then return the sum
+ */

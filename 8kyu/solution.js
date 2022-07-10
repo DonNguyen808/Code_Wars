@@ -5,12 +5,39 @@
 // The length of string is not always the same as the number of characters
 // For example: (Input1, Input2) --> output
 
-// ("1", "22") --> "1221"
-// ("22", "1") --> "1221"
+
+/* 
+PREP
+Parameter - given 2 string a , b , can it be empty?, the string will never be the same, will always have a shorter and longer
+
+Return:
+    combine the 2 string with the shoter one on the front and back and the longer one in the middle
+
+Example:
+    // ("1", "22") --> "1221"
+    // ("22", "1") --> "1221"   
+
+Pseudo Code:
+    1. determine which is shorter and longer
+    2. combine them
+    3. return it
+
+*/
 
 function solution(a, b) {
-    return a.length < b.length ? a + b + a : b + a + b
+    if (a.length > b.length) {
+        return b + a + b
+    }
+    else {
+        return a + b + a
+    }
 }
+
+
+
+// function solution(a, b) {
+//     return a.length < b.length ? a + b + a : b + a + b
+// }
 
 console.log(solution('45', '1'), '1451');
 console.log(solution('13', '200'), '1320013');

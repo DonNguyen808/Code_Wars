@@ -11,9 +11,42 @@
 // "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 // As usual, your function/method should be pure, i.e. it should not mutate the original string.
 
-String.prototype.toAlternatingCase = function() {
-    return this.split("").map(a => a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()).join('') 
+/* PREP
+Parameter(input):
+    a string of letters
+
+Return(output):
+    return back the opposite casing if the letter was uppercase it is now lowercase, if it was lowercase it is now uppercase
+
+Example:
+    toAlternatingCase('HELLO') => hello
+    toAlternatingCase('hello') => HELLO
+    toAlternatingCase('hELLo') => HellO
+
+Pseudo Code:
+    split each character
+    make a conditional to check if its uppercase or lowercase
+    respond back the opposite casing
+    return
+*/
+
+String.prototype.toAlternatingCase = function () {
+    return this.split('').map(a => a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()).join('')
 }
+
+// function toAlternatingCase(str) {
+//     let casing = str.split('')
+//     let newCasing = []
+//     for (let i = 0; i < casing.length; i++) {
+//         if (str[i] == str[i].toUpperCase()) {
+//             newCasing.push(str[i].toLowerCase())
+//         } else {
+//             newCasing.push(str[i].toUpperCase())
+//         }
+//     }
+//     return newCasing.join('')
+// }
+
 
 console.log("hello world".toAlternatingCase(), "HELLO WORLD");
 console.log("HELLO WORLD".toAlternatingCase(), "hello world");

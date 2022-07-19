@@ -6,12 +6,56 @@
 
 // Simples!
 
-function fixTheMeerkat(arr) {
-    return arr.reverse()
-}
+/* PREP
+Parameter:
+    an array with 3 elements containing strings
+    will it ever be empty?
+    will it always be 3 values?
+
+Return:
+    return back the array by reversing back the order
+
+Example:
+    fixTheMeerkat('body', 'head', 'tail') => ['head', 'body', 'tail']
+
+Pseudo Code:
+    use the reverse method 
+    return the array
+*/
+
+// function fixTheMeerkat(arr) {
+//     return arr.reverse()
+// }
+
+const fixTheMeerkat = arr => arr.reverse()
 
 console.log(fixTheMeerkat(["tail", "body", "head"]), ["head", "body", "tail"]);
 console.log(fixTheMeerkat(["tails", "body", "heads"]), ["heads", "body", "tails"]);
 console.log(fixTheMeerkat(["bottom", "middle", "top"]), ["top", "middle", "bottom"]);
 console.log(fixTheMeerkat(["lower legs", "torso", "upper legs"]), ["upper legs", "torso", "lower legs"]);
 console.log(fixTheMeerkat(["ground", "rainbow", "sky"]), ["sky", "rainbow", "ground"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function fixTheMeerkat(arr) {
+//     return arr.reverse()
+// }

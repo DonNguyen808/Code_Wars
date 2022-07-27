@@ -37,14 +37,36 @@ return it
 */
 
 function sumStr(a,b) {
-    const num1 = Number(a);
-    const num2 = Number(b);
-    return String(num1 + num2)
-  }
+        return num1 = Number(a);
+        return num2 = Number(b);
+        // return String(num1 + num2)
+      }
 
-//   function sumStr(a,b) {
-//     return String(Number(a)+Number(b));
-//   }
+// function sumStr(a, b) {
+//     if ((a == '') || (b == '')) {
+//         return '0'
+//     } else if (a == '') {
+//         let a = '0'
+//     } else if (b == '') {
+//         let b = '0'
+//     } 
+//     let sum = Number(a) + parseInt(b)
+//     return String(sum)
+// }
+
+
 
 console.log(sumStr("4","5"), "9");
 console.log(sumStr("34","5"), "39");
+console.log(sumStr('', '34'), '34')
+console.log(sumStr('', ''), '0')
+
+
+
+
+
+
+
+    //   function sumStr(a,b) {
+//     return String(Number(a)+Number(b));
+//   }

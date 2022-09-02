@@ -9,7 +9,7 @@
 // Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
 
 function getGrade(s1, s2, s3) {
-  let avg = (s1+s2+s3)/3;
+  let avg = (s1+ s2+ s3) / 3;
   if (avg < 60) return "F";
   else if (avg < 70) return "D";
   else if (avg < 80) return "C";
@@ -21,3 +21,20 @@ console.log(getGrade(50,81,70))
 console.log(getGrade(73,81,79))
 console.log(getGrade(60,53,49))
 console.log(getGrade(30,21,10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

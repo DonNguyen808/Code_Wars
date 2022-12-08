@@ -38,8 +38,12 @@ In languages with no distinct character data type, the second argument will be a
 //     return letterCount
 // }
 
+// function strCount(str, letter) {
+//     return str.split(letter).length - 1
+// }
+
 function strCount(str, letter) {
-    return str.split(letter).length - 1
+    return str.split('').filter(c => c === letter).length;
 }
 
 // console.log(('Hello'.match(/o/g) || []).length)

@@ -13,6 +13,7 @@
 //     return employed && !vacation;
 // }
 
+// truthy and falsy
 const setAlarm = (employed, vacation) => employed && !vacation
 
 console.log(setAlarm(true, false), true)

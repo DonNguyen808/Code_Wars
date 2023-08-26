@@ -16,7 +16,7 @@ function setAlarm(employed, vacation) {
 console.log(setAlarm(true, false), true)
 console.log(setAlarm(false, false), false)
 console.log(setAlarm(true, true), false)
-console.log(setAlarm(false, true), false)
+
 
 
 

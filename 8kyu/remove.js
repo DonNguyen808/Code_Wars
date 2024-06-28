@@ -11,22 +11,23 @@ Examples
 "Hi"      ---> "Hi"
 */
 
-/* 
-string containing exclamation marks
-return back the string without the exclamation marks
-hi! => hi
-loop through and check if its a exclamation mark, if it is then remove it, if it isnt, do nothing
+// function remove (string) {
+//     let stringList = string.split('')
+//     if (stringList[stringList.length - 1] === '!') {
+//         stringList.pop()
+//     }
+//     return stringList.join('')
+// }
 
-*/
-
-function remove (string) {
-    return 0
-
+function remove(s) {
+    return s.endsWith('!') ? s.slice(0, -1) : s;
 }
 
-console.log("Hi!", "Hi");
-console.log("Hi!!!", "Hi!!");
-console.log("!Hi", "!Hi");
-console.log("!Hi!", "!Hi");
-console.log("Hi! Hi!", "Hi! Hi");
-console.log("Hi", "Hi");
+// const remove = s => s.replace(/!$/, '');
+
+console.log(remove("Hi!"), "Hi");
+console.log(remove("Hi!!!"), "Hi!!");
+console.log(remove("!Hi"), "!Hi");
+console.log(remove("!Hi!"), "!Hi");
+console.log(remove("Hi! Hi!"), "Hi! Hi");
+console.log(remove("Hi"), "Hi");

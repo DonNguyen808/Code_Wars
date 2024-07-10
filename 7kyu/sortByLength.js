@@ -1,28 +1,3 @@
-/* function sortByLength (array) {
-    return array.sort((a,b) => a.length - b.length);
-  };
-
-
-example = ["Telescopes", "Glasses", "Eyes", "Monocles"]
-
-console.log(sortByLength(example)) */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
 
@@ -38,26 +13,13 @@ All of the strings in the array passed to your function will be different length
 
 */
 
-/* 
-P: an array including strings, wont be empty
-R: return back the array sorted by the shortest length string to longest
-E: ['goku', 'vegeta', 'freezer'] => 
-P: can use the sort method - may just do it for me
-
-*/
-
 function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length);
 }
 
-// function sortByLength(array) {
-//   let wordLength = []
-//   for (let i = 0; i < array.length; i++) {
-//     wordLength.push(array[i].length)
-//   }
-//   return wordLength
-
-// }
+// Because "sort" is a villain that changes original array
+function sortByLength (array) {
+  return [...array].sort((a,b) => a.length - b.length); };
 
 console.log(sortByLength(["Beg", "Life", "I", "To"]),["I", "To", "Beg", "Life"]);
 

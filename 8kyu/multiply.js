@@ -1,22 +1,43 @@
-// This code does not execute properly. Try to figure out why.
+/* 
+Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers, so, for example:
+  3 -->    15  (  3 * 5¹)
+ 10 -->   250  ( 10 * 5²)
+200 --> 25000  (200 * 5³)
+  0 -->     0  (  0 * 5¹)
+ -3 -->   -15  ( -3 * 5¹)
+*/
 
-// function multiply(a,b) {
-//     a * b
-// }
+function multiply(number) {
+    return number * Math.pow(5, Math.abs(number).toString().length)
+}
 
-// function multiply(a, b){
-//     return a * b
-// }
+console.log(multiply(10), 250);
+console.log(multiply(0), 0);
+console.log(multiply(-2), -10);
 
-// console.log(multiply(2, 5))
 
-// Implement a function which multiplies two numbers.
 
-// function multiply(n1, n2) {
-//   return n1 * n2;
-// }
 
-const multiply = (n1, n2) => n1 * n2
 
-// Expected result: 6
-console.log(multiply(2, 3), 6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

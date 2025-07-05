@@ -1,23 +1,58 @@
-// Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
-// In other words , try every combination of a,b,c with [*+()] , and return the Maximum Obtained
-// Consider an Example :
-// With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:
+/*  
+Given three integers a, b, and c, return the largest number obtained after inserting the operators +, *, and parentheses (). In other words, try every combination of a, b, and c with the operators, without reordering the operands, and return the maximum value.
 
-// 1 * (2 + 3) = 5
-// 1 * 2 * 3 = 6
-// 1 + 2 * 3 = 7
-// (1 + 2) * 3 = 9
-// So the maximum value that you can obtain is 9.
+Example
+With the numbers 1, 2, and 3, here are some possible expressions:
+
+1 * (2 + 3) = 5
+1 * 2 * 3 = 6
+1 + 2 * 3 = 7
+(1 + 2) * 3 = 9
+The maximum value that can be obtained is 9.
+
+Notes
+The numbers are always positive, in the range 1 ≤ a, b, c ≤ 10.
+You can use the same operation more than once.
+It is not necessary to use all the operators or parentheses.
+You cannot swap the operands. For example, with the given numbers, you cannot get the expression (1 + 3) * 2 = 8.
+Input and Output Examples
+expressionsMatter(1, 2, 3) ==> 9, because (1 + 2) * 3 = 9.
+expressionsMatter(1, 1, 1) ==> 3, because 1 + 1 + 1 = 3.
+expressionsMatter(9, 1, 1) ==> 18, because 9 * (1 + 1) = 18.
+*/
+
+
+/* 
+Parameter: whats it taking in, 3 integers
+Return: what is it returning return back the highest number put into the formula between these 3
+Example: expressionMatters(1,2,3) => 9
+Pseudo code:
+
+*/
 
 function expressionsMatter(a, b, c) {
-    return Math.max(
-      a + b + c,
-      a * b * c,
-      a * (b + c),
-      (a + b) * c,
-      a + b * c,
-      a * b + c,
-    );
-  }
+  return Math.max(
+    a + b + c,
+    a * b * c,
+    a * (b + c),
+    (a +b) * c,
+    a + b * c,
+    a * b + c,
+  );
+}
 
 console.log(expressionsMatter(1, 2, 3))
+
+
+// function expressionsMatter(a, b, c) {
+//     return Math.max(
+//       a + b + c,
+//       a * b * c,
+//       a * (b + c),
+//       (a + b) * c,
+//       a + b * c,
+//       a * b + c,
+//     );
+//   }
+
+// console.log(expressionsMatter(1, 2, 3))
